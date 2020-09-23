@@ -76,16 +76,56 @@
             id="background"
             onchange="buttonColorChange(this)"
           >
+            <option value="none" selected disabled hidden>Mix it up!</option>
             <option value="random">Random</option>
             <option value="red">Red</option>
             <option value="green">Green</option>
-            <option value="Reset">Reset</option>
+            <option value="reset">Reset</option>
           </select>
         </form>
-        <button class="btn btn-primary">Wee!</button>
-        <button class="btn btn-danger">Yahoo!</button>
-        <button class="btn btn-warning">Yippee!</button>
-        <button class="btn btn-success">Wazoo!</button>
+        <button class="btn btn-primary">This</button>
+        <button class="btn btn-danger">Button</button>
+        <button class="btn btn-warning">Doesn't Do</button>
+        <button class="btn btn-success">Anything</button>
+      </div>
+    </div>
+    <div class="container-5">
+      <h2>Challenge 5: Blackjack</h2>
+      <h3><span id="blackjack-result">Let's play!</span></h3>
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-blackjack-result">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">
+            Hit
+          </button>
+          <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">
+            Stand
+          </button>
+          <button class="btn-lg btn-danger" id="blackjack-deal-button">
+            Deal
+          </button>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </table>
       </div>
     </div>
     <script src="static/js/script.js"></script>
